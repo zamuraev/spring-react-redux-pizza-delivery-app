@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9eda7b7c-14f9-48b5-89f2-b942318a056f" name="Default Changelist" comment="Implemented components on React front-end side">
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/entities/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/entities/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/entities/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/entities/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/entities/Varient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/exceptions/UserServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/exceptions/UserServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/services/ValidationErrorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/services/ValidationErrorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <list id="742b6ed7-80a7-48e5-b83c-701707f30269" name="Implemented components on React front-end side" comment="Implemented components on React front-end side" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1y6C9qpPG5qMTzs9URpqZYLhObx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java Junior Software Developer\projects\spring-react-redux-pizza-delivery-app\frontend-pizza-delivery-app\src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eda7b7c-14f9-48b5-89f2-b942318a056f" name="Default Changelist" comment="" />
+      <changelist id="742b6ed7-80a7-48e5-b83c-701707f30269" name="Implemented components on React front-end side" comment="" />
+      <created>1631562501174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631562501174</updated>
+      <workItem from="1631562503483" duration="662000" />
+      <workItem from="1631563559858" duration="1772000" />
+      <workItem from="1631653105111" duration="11189000" />
+      <workItem from="1631684588472" duration="97000" />
+      <workItem from="1631747680872" duration="10579000" />
+      <workItem from="1631768590687" duration="190000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implemented components on React front-end side">
+      <created>1631768101401</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631768101401</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implemented components on React front-end side">
+      <created>1631768207092</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631768207092</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented components on React front-end side" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented components on React front-end side" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2289" y="88" width="1335" height="827" key="CommitChangelistDialog2" timestamp="1631768774893">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2289" y="88" width="1335" height="827" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631768774893" />
+    <state x="2360" y="94" key="SettingsEditor" timestamp="1631768149812">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2360" y="94" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631768149812" />
+    <state x="2727" y="434" key="VCS.ChangelistChooser" timestamp="1631768366574">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2727" y="434" key="VCS.ChangelistChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631768366574" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1631768230266">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631768230266" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Navbar.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
