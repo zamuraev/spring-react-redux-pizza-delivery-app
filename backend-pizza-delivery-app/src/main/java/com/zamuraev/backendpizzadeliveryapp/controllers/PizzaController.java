@@ -13,6 +13,7 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("/pizzas")
 @RequiredArgsConstructor
+@CrossOrigin("*")
 public class PizzaController {
 
     private final PizzaService pizzaService;

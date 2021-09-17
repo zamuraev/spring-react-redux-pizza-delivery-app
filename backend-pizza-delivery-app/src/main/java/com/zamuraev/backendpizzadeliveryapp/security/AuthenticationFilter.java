@@ -55,13 +55,13 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
         UserDto userDetails = userService.getUserDetailsByEmail(userName);
 
         String token = Jwts.builder()
-                .setSubject(userName)
+                .setSubject(userDetails.getUserId())
                 .setExpiration(new Date(System.currentTimeMillis()+Long.parseLong(env.getProperty("token.expiration_time"))))
                 .signWith(SignatureAlgorithm.HS512, env.getProperty("token.secret"))
                 .compact();
 
         res.addHeader(env.getProperty("authorization.token.header.name"), env.getProperty("authorization.token.header.prefix")+token);
-        res.addHeader("userId", userDetails.getUserId());
+//        res.addHeader("userId", userDetails.getUserId());
     }
 
 }
