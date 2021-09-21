@@ -16,18 +16,27 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eda7b7c-14f9-48b5-89f2-b942318a056f" name="Default Changelist" comment="Implemented components on React front-end side">
-      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/controllers/PizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/controllers/PizzaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/security/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/security/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/security/WebSecurity.java" afterDir="false" />
+    <list default="true" id="9eda7b7c-14f9-48b5-89f2-b942318a056f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/screens/Cartscreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/stripe/PaymentGatewayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/stripe/PaymentGatewayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/stripe/StripeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend-pizza-delivery-app/src/main/java/com/zamuraev/backendpizzadeliveryapp/stripe/StripeClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/authAct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/authAct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/pizzaAct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/pizzaAct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pizza.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pizza.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/authReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/authReducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/errorReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/errorReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Homescreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Homescreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
     </list>
     <list id="742b6ed7-80a7-48e5-b83c-701707f30269" name="Implemented components on React front-end side" comment="Implemented components on React front-end side" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +70,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backend-pizza-delivery-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring-send-email" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -73,13 +82,14 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java Junior Software Developer\projects\spring-react-redux-pizza-delivery-app\frontend-pizza-delivery-app\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java Junior Software Developer\projects\spring-react-redux-pizza-delivery-app\frontend-pizza-delivery-app\src\screens" />
       <recent name="D:\Java Junior Software Developer\projects\spring-react-redux-pizza-delivery-app\frontend-pizza-delivery-app\src\auth\register" />
       <recent name="D:\Java Junior Software Developer\projects\spring-react-redux-pizza-delivery-app\frontend-pizza-delivery-app\src\auth\login" />
       <recent name="D:\Java Junior Software Developer\projects\spring-react-redux-pizza-delivery-app\frontend-pizza-delivery-app\src\auth\form" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java Junior Software Developer\projects\spring-react-redux-pizza-delivery-app\frontend-pizza-delivery-app\src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -99,7 +109,10 @@
       <workItem from="1631684588472" duration="97000" />
       <workItem from="1631747680872" duration="10579000" />
       <workItem from="1631768590687" duration="190000" />
-      <workItem from="1631769122552" duration="59078000" />
+      <workItem from="1631769122552" duration="59405000" />
+      <workItem from="1631910885326" duration="6289000" />
+      <workItem from="1632044353005" duration="134000" />
+      <workItem from="1632103395373" duration="46979000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented components on React front-end side">
       <created>1631768101401</created>
@@ -115,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631768207092</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented Redux Store for Users and Pizzas on front-end side">
+      <created>1631909715389</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631909715389</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,21 +167,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented components on React front-end side" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented components on React front-end side" />
+    <MESSAGE value="Implemented Redux Store for Users and Pizzas on front-end side" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Redux Store for Users and Pizzas on front-end side" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2632" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631840357686">
+    <state x="2632" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632104480405">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2632" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631840357686" />
-    <state x="2289" y="88" width="1335" height="827" key="CommitChangelistDialog2" timestamp="1631768774893">
+    <state x="2632" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632104480405" />
+    <state x="2289" y="88" width="1335" height="827" key="CommitChangelistDialog2" timestamp="1631909714821">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2289" y="88" width="1335" height="827" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631768774893" />
-    <state x="2660" y="274" key="FileChooserDialogImpl" timestamp="1631769136411">
+    <state x="2289" y="88" width="1335" height="827" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631909714821" />
+    <state x="2660" y="274" key="FileChooserDialogImpl" timestamp="1632209033019">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2660" y="274" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631769136411" />
+    <state x="2660" y="274" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632209033019" />
     <state x="2360" y="94" key="SettingsEditor" timestamp="1631768149812">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -170,23 +191,22 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2727" y="434" key="VCS.ChangelistChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631768366574" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1631768230266">
+    <state x="2472" y="252" width="1145" height="535" key="Vcs.Push.Dialog.v2" timestamp="1631909731163">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631768230266" />
+    <state x="2472" y="252" width="1145" height="535" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1631909731163" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Navbar.js</url>
-          <line>76</line>
+          <line>74</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/actions/types.js</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

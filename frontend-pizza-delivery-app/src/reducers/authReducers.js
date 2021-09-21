@@ -28,7 +28,6 @@ export const getLogInUser = (state = initialState, action) => {
         default:
             return state
     }
-
 }
 
 

@@ -41,4 +41,24 @@ select{
   border-color: black !important;
 }
 
+.bi-plus-lg {
+  color: green;
+  margin: 5px;
+}
+
+.bi-dash-lg {
+  color: red;
+  margin: 5px;
+}
+
+.bi-archive-fill {
+  color: red;
+}
+
+.bi-cart-plus {
+  color: green;
+  margin: 10px;
+  font-size: 50px  !important;
+
+}
 

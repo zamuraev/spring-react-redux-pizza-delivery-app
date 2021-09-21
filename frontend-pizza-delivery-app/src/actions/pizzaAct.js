@@ -1,12 +1,12 @@
-import axios from "axios";
 import {GET_PIZZAS_FAILED, GET_PIZZAS_REQUEST, GET_PIZZAS_SUCCESS} from "./types";
+import fetchClient from './fetchClient'
 
 const getAllPizzas = () => async dispatch => {
 
     dispatch({type: GET_PIZZAS_REQUEST})
 
     try {
-        const response = await axios.get('/pizzas')
+        const response = await fetchClient.get('/pizzas')
 
         console.log(response.data);
         dispatch({

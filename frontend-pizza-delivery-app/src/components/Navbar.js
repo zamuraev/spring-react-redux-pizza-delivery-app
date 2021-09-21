@@ -2,15 +2,14 @@ import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {Link, useHistory} from "react-router-dom";
 import {userLogOut} from "../actions/authAct";
-import {setJWTToken} from "../actions/setJWTToken";
-import {getAllPizzas} from "../actions/pizzaAct";
-
 
 function Navbar(props) {
 
-   const dispatch = useDispatch();
-   const history = useHistory();
-   const { token } = useSelector((state) => state.getLogInUser)
+    const dispatch = useDispatch();
+    const history = useHistory();
+    const {token} = useSelector((state) => state.getLogInUser)
+    const {cartItems} = useSelector((state) =>state.cartReducer)
+
 
     const logout = () => {
         dispatch(userLogOut(history));
@@ -31,23 +30,22 @@ function Navbar(props) {
                         {token && (
                             <>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/card">
-                                        Card
+                                    <Link className="nav-link" to="/userInfo">
+                                        User Info
                                     </Link>
                                 </li>
-
-
-                                {/*<li className="nav-item">*/}
-                                {/*    <Link className="nav-link" to="/user">*/}
-                                {/*        User Info*/}
-                                {/*    </Link>*/}
-                                {/*</li>*/}
-
 
                                 <li className="nav-item">
                                     <a className="nav-link pointer" href="#" onClick={logout}>
                                         Logout
                                     </a>
+                                </li>
+
+                                <li className="nav-item">
+                                    <Link className="nav-link pointer" to="/cart">
+                                        Cart
+                                        <i className="bi bi-basket3 ml-2 mr-2">{cartItems.length}</i>
+                                    </Link>
                                 </li>
                             </>
                         )}

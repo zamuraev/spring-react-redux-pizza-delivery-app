@@ -3,7 +3,6 @@ import Pizza from "../components/Pizza";
 import {useDispatch, useSelector} from "react-redux";
 import {getAllPizzas} from '../actions/pizzaAct'
 import Load from "../components/Load";
-import {setJWTToken} from "../actions/setJWTToken";
 
 function Homescreen(props) {
 
@@ -16,7 +15,6 @@ function Homescreen(props) {
     useEffect(
        () => {
 
-           setJWTToken(token)
            dispatch(getAllPizzas());
 
        } , []

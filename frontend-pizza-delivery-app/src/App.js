@@ -4,11 +4,10 @@ import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
 import Homescreen from "./screens/Homescreen";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Card from "./components/Card";
+import Cartscreen from "./screens/Cartscreen";
 import Login from "./auth/login/Login";
 import Register from "./auth/register/Register";
 import UserDetails from "./components/UserDetails";
-
 
 function App() {
 
@@ -20,7 +19,7 @@ function App() {
          <Route exact path="/" component={Homescreen} />
          <Route exact path="/login" component={Login} />
          <Route exact path="/register" component={Register} />
-         <Route exact path="/card" component={Card} />
+         <Route exact path="/cart" component={Cartscreen} />
          <Route exact path="/userInfo" component={UserDetails} />
          <Route path="*" component={NotFound} />
      </Switch>
@@ -41,3 +40,4 @@ export default App;
 // ,  "proxy": "http://localhost:8080"
 // npm install jwt-decode
 // npm install --save react-toastify
+//npm install --save @fortawesome/fontawesome-free
