@@ -1,19 +1,25 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {Link, useHistory} from "react-router-dom";
-import {userLogOut} from "../actions/authAct";
+import {getUserDetails, userLogOut} from "../actions/authAct";
+import {DropdownButton, Dropdown} from "react-bootstrap";
 
 function Navbar(props) {
 
     const dispatch = useDispatch();
     const history = useHistory();
-    const {token} = useSelector((state) => state.getLogInUser)
+    const {token,currentUser,userId} = useSelector((state) => state.getLogInUser)
     const {cartItems} = useSelector((state) =>state.cartReducer)
-
 
     const logout = () => {
         dispatch(userLogOut(history));
     };
+
+    useEffect(
+        () => {
+            dispatch(getUserDetails(userId));
+        } , []
+    )
 
     return (
         <div>
@@ -30,15 +36,11 @@ function Navbar(props) {
                         {token && (
                             <>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/userInfo">
-                                        User Info
-                                    </Link>
-                                </li>
-
-                                <li className="nav-item">
-                                    <a className="nav-link pointer" href="#" onClick={logout}>
-                                        Logout
-                                    </a>
+                                    <DropdownButton id="dropdown-basic-button" title={currentUser.firstName}>
+                                        <Dropdown.Item href="/userInfo">User Info</Dropdown.Item>
+                                        <Dropdown.Item href="/orders">Orders</Dropdown.Item>
+                                        <Dropdown.Item onClick={logout}>Log Out</Dropdown.Item>
+                                    </DropdownButton>
                                 </li>
 
                                 <li className="nav-item">

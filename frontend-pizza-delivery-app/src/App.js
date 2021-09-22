@@ -12,20 +12,20 @@ import UserDetails from "./components/UserDetails";
 function App() {
 
     return (
-    <div className="App">
-    <BrowserRouter>
-     <Navbar />
-     <Switch>
-         <Route exact path="/" component={Homescreen} />
-         <Route exact path="/login" component={Login} />
-         <Route exact path="/register" component={Register} />
-         <Route exact path="/cart" component={Cartscreen} />
-         <Route exact path="/userInfo" component={UserDetails} />
-         <Route path="*" component={NotFound} />
-     </Switch>
-    </BrowserRouter>
-    </div>
-);
+        <div className="App">
+                <BrowserRouter>
+                    <Navbar/>
+                    <Switch>
+                        <Route exact path="/" component={Homescreen}/>
+                        <Route exact path="/login" component={Login}/>
+                        <Route exact path="/register" component={Register}/>
+                        <Route exact path="/cart" component={Cartscreen}/>
+                        <Route exact path="/userInfo" component={UserDetails}/>
+                        <Route path="*" component={NotFound}/>
+                    </Switch>
+                </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

@@ -28,15 +28,12 @@ const userLogin = (loginRequest, history) => async dispatch => {
         const token = res.headers.authorization;
         const userId = jwt_decode(token).sub;
         setJWTToken(token);
-
         window.localStorage.setItem("jwtToken", token);
         window.localStorage.setItem("userId", userId);
-
         dispatch({
             type: SET_CURRENT_USER,
             payload: {token, userId}
         })
-
         history.push("/");
 
     } catch (error) {
@@ -62,18 +59,16 @@ const getUserDetails = (userId) => async dispatch => {
 
     try {
         const response = await fetchClient.get(`/users/${userId}`);
-
         dispatch({
             type: GET_USER_DETAILS,
             payload: response.data
         });
-
+        localStorage.setItem('currentUser', JSON.stringify(response.data))
     } catch (error) {
         dispatch({
             type: GET_USER_ERROR,
             payload: error.response.data
         });
-
     }
 }
 

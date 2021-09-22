@@ -4,7 +4,7 @@ const placeOrder = (token, subtotal) => async (dispatch, getState) => {
 
     dispatch({type: 'PLACE_ORDER_REQUEST'})
 
-    // const currentUser = getState().loginUserReducer.currentUser
+    // const currentUser = getState().getLogInUser.currentUser
     // const cartItems = getState.cartReducer.cartItems
     //
     // try {

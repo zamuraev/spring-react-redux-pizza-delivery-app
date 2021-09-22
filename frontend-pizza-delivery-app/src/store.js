@@ -9,7 +9,6 @@ import {cartReducer} from "./reducers/cartReducer";
 import {placeOrderReducer} from "./reducers/orderReducer";
 
 const finalReducer =  combineReducers({
-
     getAllPizzasReducer: getAllPizzasReducer,
     getLogInUser: getLogInUser,
     getUserError: getUserError,
@@ -17,17 +16,23 @@ const finalReducer =  combineReducers({
     placeOrderReducer: placeOrderReducer
 })
 
-const cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : []
+const cartItems = window.localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : []
+const currentUser = window.localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : null
 
 const initialState = {
 
     cartReducer: {
         cartItems: cartItems
+    },
+
+    getLogInUser: {
+        token: window.localStorage.getItem('jwtToken'),
+        userId: window.localStorage.getItem('userId'),
+        currentUser: currentUser
     }
+
 }
 
 const composeEnhancers = composeWithDevTools({})
-
 const store = createStore(finalReducer,initialState,composeEnhancers(applyMiddleware(thunk)))
-
 export default store

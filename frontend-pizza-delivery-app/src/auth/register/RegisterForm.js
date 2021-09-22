@@ -10,7 +10,9 @@ const RegisterForm = ({
     password,
     setPassword,
     email,
-    setEmail
+    setEmail,
+    cpassword,
+    setcpassword
 
 }) => ( <form onSubmit={handleSubmit} className="mt-3">
         <div className="form-group mb-3">
@@ -49,7 +51,7 @@ const RegisterForm = ({
         <div className="form-group mb-3">
             <label className="form-label">Password</label>
             <input
-                type="password"
+                type="text"
                 className="form-control"
                 placeholder="Enter password"
                 value={password}
@@ -57,11 +59,21 @@ const RegisterForm = ({
             />
         </div>
 
-        <button disabled={!firstName || !lastName || !email || !password} className="btn btn-primary">
+        <div className="form-group mb-3">
+            <label className="form-label">Confirm password</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Confirm password"
+                value={cpassword}
+                onChange={(e) => setcpassword(e.target.value)}
+            />
+        </div>
+
+        <button disabled={!firstName || !lastName || !email || !password || !cpassword} className="btn btn-primary">
             Submit
         </button>
     </form>
 );
-
 
 export default RegisterForm;

@@ -1,14 +1,16 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import RegisterForm from "./RegisterForm";
 import { useDispatch } from "react-redux";
 import {userRegistration} from "../../actions/authAct";
 import {useHistory} from "react-router-dom";
 
 const Register = () => {
+
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
+    const [cpassword, setcpassword] = useState("");
 
     const dispatch = useDispatch();
     const history = useHistory();
@@ -16,8 +18,11 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        if(cpassword!==password) {
+            alert('Passwords not match')
+        } else {
         dispatch(userRegistration({firstName, lastName, password, email}, history));
-
+        }
     };
 
     return (
@@ -39,6 +44,8 @@ const Register = () => {
                             setPassword={setPassword}
                             email={email}
                             setEmail={setEmail}
+                            cpassword={cpassword}
+                            setcpassword={setcpassword}
                         />
                     </div>
                 </div>

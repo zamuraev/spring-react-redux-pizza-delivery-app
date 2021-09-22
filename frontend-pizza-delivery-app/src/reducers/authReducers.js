@@ -1,9 +1,9 @@
 import {GET_USER_DETAILS, SET_CURRENT_USER} from "../actions/types";
 
 const initialState = {
-    token: window.localStorage.getItem('jwtToken'),
-    user: {},
-    userId: window.localStorage.getItem('userId')
+    token: {},
+    currentUser: {},
+    userId: {}
 }
 
 export const getLogInUser = (state = initialState, action) => {
@@ -22,7 +22,7 @@ export const getLogInUser = (state = initialState, action) => {
 
             return {
                 ...state,
-                user: action.payload
+                currentUser: action.payload
             }
 
         default:
