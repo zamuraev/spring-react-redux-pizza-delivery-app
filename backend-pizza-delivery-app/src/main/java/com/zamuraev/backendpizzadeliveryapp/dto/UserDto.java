@@ -13,8 +13,10 @@ public class UserDto {
     private String lastName;
     private String email;
     private String password;
+    private Boolean isAdmin;
     private String encryptedPassword;
     private String emailVerificationToken;
     private Boolean emailVerificationStatus = false;
+
 
 }

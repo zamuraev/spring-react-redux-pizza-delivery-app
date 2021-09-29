@@ -30,21 +30,21 @@ public class PizzaController {
     }
 
     @PostMapping
-    public ResponseEntity<?> create(@Valid @RequestBody Pizza wallet, BindingResult result) {
+    public ResponseEntity<?> create(@Valid @RequestBody Pizza pizza, BindingResult result) {
         ResponseEntity errors = validationService.validate(result);
         if(errors!=null) return errors;
 
-        Pizza pizzaSaved = pizzaService.createOrUpdate(wallet);
+        Pizza pizzaSaved = pizzaService.createOrUpdate(pizza);
         return new ResponseEntity<Pizza>(pizzaSaved, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> update(@PathVariable String id, @Valid @RequestBody Pizza wallet, BindingResult result){
+    public ResponseEntity<?> update(@PathVariable String id, @Valid @RequestBody Pizza pizza, BindingResult result){
         ResponseEntity errors = validationService.validate(result);
         if(errors != null) return errors;
 
-        wallet.setId(id);
-        Pizza pizzaSaved = pizzaService.createOrUpdate(wallet);
+        pizza.setId(id);
+        Pizza pizzaSaved = pizzaService.createOrUpdate(pizza);
         return new ResponseEntity<Pizza>(pizzaSaved,HttpStatus.OK);
     }
 

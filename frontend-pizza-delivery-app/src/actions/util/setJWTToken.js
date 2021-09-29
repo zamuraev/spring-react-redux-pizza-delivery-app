@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 const setJWTToken = (token) => {
 
     if(token) {

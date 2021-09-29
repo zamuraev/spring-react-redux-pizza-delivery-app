@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import LoginForm from "./LoginForm";
-import {userLogin} from "../../actions/authAct";
+import {userLogin} from "../../actions/usersActions";
 import {useHistory} from "react-router-dom";
 
 const Login = () => {

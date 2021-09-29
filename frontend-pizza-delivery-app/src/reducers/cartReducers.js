@@ -1,7 +1,9 @@
-const cartReducer = (state = {cartItems: []}, action) => {
+import {ADD_TO_CART, DELETE_FROM_CART} from "../actions/util/types";
+
+const cartReducers = (state = {cartItems: []}, action) => {
 
     switch (action.type) {
-        case 'ADD_TO_CART': {
+        case ADD_TO_CART: {
 
             const alreadyExists = state.cartItems.find(item => item.id === action.payload.id)
             if (alreadyExists) {
@@ -17,7 +19,7 @@ const cartReducer = (state = {cartItems: []}, action) => {
             }
         }
 
-        case 'DELETE_FROM_CART': {
+        case DELETE_FROM_CART: {
             return {
                 ...state,
                 cartItems: state.cartItems.filter(item=> item.id !== action.payload.id)
@@ -29,4 +31,4 @@ const cartReducer = (state = {cartItems: []}, action) => {
     }
 }
 
-export {cartReducer}
+export {cartReducers}

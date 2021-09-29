@@ -1,5 +1,4 @@
-const pizzas  =
-    [{
+[{
     "name": "PEPPER BARBECUE CHICKEN",
     "varients": [
         "small",
@@ -107,5 +106,3 @@ const pizzas  =
     "image": "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/margherita-pizza-500x500.jpg",
     "description": "This is a plain pizza which have cheese on it which is margherita and is delicious because of the loads of cheese. After mixing all the ingredients, it is baked by adding the cheese as topping over it. The base is perfectly prepared by adding double layer of cheese over it"
 }]
-
-export default pizzas

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Modal} from 'react-bootstrap'
 import {useDispatch, useSelector} from "react-redux";
-import {addToCart} from "../actions/cartAct";
+import {addToCart} from "../actions/cartsActions";
 
 export default function Pizza({pizza}) {
 

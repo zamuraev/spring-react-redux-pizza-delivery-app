@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {addToCart, deleteFromCart} from "../actions/cartAct";
-import Checkout from "../components/Checkout";
+import {addToCart, deleteFromCart} from "../actions/cartsActions";
+import Checkout from "../components/stripe-configuration/Checkout";
+import Success from "../components/util/Success";
+import Error from "../components/util/Error";
 
 function Cartscreen(props) {
 
-    const {cartItems} = useSelector((state) => state.cartReducer)
+    const {cartItems } = useSelector((state) => state.cartReducer)
+    const {success,error} = useSelector((state) => state.placeOrderReducer)
     const dispatch = useDispatch();
     var subtotal = cartItems.reduce((x, item) => (x + item.price), 0)
 
@@ -41,8 +44,12 @@ function Cartscreen(props) {
             </div>
 
             <div className="col-md-4 text-sm-end">
-                <h2 style={{fontSize: '45px'}}>SubTotal: {subtotal} UAH</h2>
-                <Checkout subtotal={subtotal} />
+                <h2 style={{fontSize: '45px'}}>Subtotal: {subtotal} UAH</h2>
+                <Checkout subtotal={subtotal}/>
+                <div className='mt-3'>
+                    {success && (<Success success={'Order Placed Successfully'}/>)}
+                    {error && (<Error error={'Payment failed'}/>)}
+                </div>
             </div>
         </div>
     )

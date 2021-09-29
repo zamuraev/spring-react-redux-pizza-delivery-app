@@ -58,7 +58,7 @@ select{
 .bi-cart-plus {
   color: green;
   margin: 10px;
-  font-size: 50px  !important;
+  font-size: 40px  !important;
 }
 
 #dropdown-basic-button{
@@ -68,3 +68,55 @@ select{
   font-size: 16px !important;
 }
 
+.adminFunctions{
+  padding: 10px;
+  background-color: darkblue;
+}
+
+.adminFunctions li{
+  list-style-type: none !important;
+  display: inline !important;
+  color: white !important;
+}
+
+.adminFunctions li a{
+  color: white !important;
+  text-decoration: none !important;
+  padding: 20px;
+}
+
+.bi-gear-fill{
+  color: blue;
+  margin: 10px;
+  font-size: 30px  !important;
+}
+
+.bi-patch-check {
+  color: red;
+  margin: 10px;
+  font-size: 40px  !important;
+}
+
+.bi-exclude {
+  color: darkblue !important;
+  margin: 10px;
+  font-size: 20px  !important;
+}
+
+td, th, tr {
+  text-align: left;
+}
+
+.bi-trash {
+  color: red !important;
+  font-size: 20px  !important;
+}
+
+.bi-pencil {
+  color: darkgreen !important;
+  font-size: 20px  !important;
+}
+
+#editPizzaCat, #addPizzaCat{
+  border-color: grey !important;
+}

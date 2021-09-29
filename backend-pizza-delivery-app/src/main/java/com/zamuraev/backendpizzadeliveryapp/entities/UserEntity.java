@@ -26,10 +26,11 @@ public class UserEntity {
 
     private String encryptedPassword;
 
+    private Boolean isAdmin = false;
+
     private String emailVerificationToken;
 
     private Boolean emailVerificationStatus = false;
-
 }
 
 

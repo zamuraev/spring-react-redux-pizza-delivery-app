@@ -1,28 +1,20 @@
-import React, {useEffect, useState} from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import {getUserDetails, userRegistration} from "../actions/authAct";
+import React, {useState} from 'react';
+import {updateUserDetails} from "../actions/usersActions";
+import {useDispatch, useSelector,} from "react-redux";
 import {useHistory} from "react-router-dom";
 
 function UserDetails() {
 
-    const dispatch = useDispatch()
+    const {currentUser} = useSelector((state) => state.loginUserReducer)
+    const dispatch = useDispatch();
     const history = useHistory();
-    const {user, userId} = useSelector((state) => state.getLogInUser)
 
-    const {firstName, lastName} = user
-    const [userFirstName, setUserFirstName] = useState(firstName+'');
-    const [userLastName, setUserLastName] = useState(lastName+'');
-
-    useEffect(
-        () => {
-            dispatch(getUserDetails(userId));
-        } , []
-    )
+    const [fistName, setFistName] = useState(currentUser.firstName);
+    const [lastname, setLastName] = useState(currentUser.lastName);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        dispatch(userRegistration({firstName, lastName}, history));
+        dispatch(updateUserDetails(currentUser.userId, fistName, lastname, history));
     };
 
     return (
@@ -40,8 +32,8 @@ function UserDetails() {
                                 <input
                                     type="text"
                                     className="form-control"
-                                    value={userFirstName}
-                                    onChange={(e) => setUserFirstName(e.target.value)}
+                                    value={fistName}
+                                    onChange={(e) => setFistName(e.target.value)}
                                 />
                             </div>
 
@@ -50,13 +42,13 @@ function UserDetails() {
                                 <input
                                     type="text"
                                     className="form-control"
-                                    value={userLastName}
-                                    onChange={(e) => setUserLastName(e.target.value)}
+                                    value={lastname}
+                                    onChange={(e) => setLastName(e.target.value)}
                                 />
                             </div>
 
-                            <button disabled={!userFirstName || !userLastName} className="btn btn-primary">
-                                Update User Info
+                            <button disabled={!fistName || !lastname} className="btn btn-primary">
+                                Update User
                             </button>
                         </form>
                     </div>

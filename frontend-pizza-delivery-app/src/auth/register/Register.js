@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import RegisterForm from "./RegisterForm";
-import { useDispatch } from "react-redux";
-import {userRegistration} from "../../actions/authAct";
+import {useDispatch, useSelector} from "react-redux";
+import {userRegistration} from "../../actions/usersActions";
 import {useHistory} from "react-router-dom";
 
 const Register = () => {
+
+    const registerState = useSelector((state) =>state.registerUserReducer)
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -46,6 +48,7 @@ const Register = () => {
                             setEmail={setEmail}
                             cpassword={cpassword}
                             setcpassword={setcpassword}
+                            registerState={registerState}
                         />
                     </div>
                 </div>

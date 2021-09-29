@@ -1,3 +1,5 @@
+import {ADD_TO_CART, DELETE_FROM_CART} from "./util/types";
+
 const addToCart = (pizza, varient, quantity) => (dispatch, getState) => {
 
     const cartItem = {
@@ -16,19 +18,18 @@ const addToCart = (pizza, varient, quantity) => (dispatch, getState) => {
         alert('You can not add less then 0 quantities')
     } else {
         dispatch({
-            type: 'ADD_TO_CART', payload: cartItem
+            type: ADD_TO_CART,
+            payload: cartItem
         })
     }
-
     const cartItems = getState().cartReducer.cartItems
     localStorage.setItem('cartItems', JSON.stringify(cartItems))
-
 }
 
 const deleteFromCart = (pizza) => (dispatch, getState) => {
 
     dispatch({
-        type: 'DELETE_FROM_CART',
+        type: DELETE_FROM_CART,
         payload: pizza
     })
 

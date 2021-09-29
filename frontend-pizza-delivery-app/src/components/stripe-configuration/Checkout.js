@@ -1,7 +1,7 @@
 import React from 'react';
 import StripeCheckout from "react-stripe-checkout";
 import {useDispatch} from "react-redux";
-import {placeOrder} from "../actions/orderAct"
+import {placeOrder} from "../../actions/ordersActions"
 
 function Checkout({subtotal}) {
 

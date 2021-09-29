@@ -19,9 +19,9 @@ public class PizzaService {
     }
 
     public boolean delete(String id) {
-        Optional<Pizza> wallet = pizzaRepository.findById(id);
-        if (wallet.isPresent()) {
-            pizzaRepository.delete(wallet.get());
+        Optional<Pizza> pizza = pizzaRepository.findById(id);
+        if (pizza.isPresent()) {
+            pizzaRepository.delete(pizza.get());
             return true;
         }
         throw new PizzaServiceException("Pizza with "+id+" does not exists!");
@@ -32,9 +32,9 @@ public class PizzaService {
     }
 
     public Pizza getById(String id){
-        Optional<Pizza> wallet = pizzaRepository.findById(id);
-        if(wallet.isPresent()){
-            return wallet.get();
+        Optional<Pizza> pizza = pizzaRepository.findById(id);
+        if(pizza.isPresent()){
+            return pizza.get();
         }
         throw new PizzaServiceException("Pizza with "+id+" does not exists!");
     }

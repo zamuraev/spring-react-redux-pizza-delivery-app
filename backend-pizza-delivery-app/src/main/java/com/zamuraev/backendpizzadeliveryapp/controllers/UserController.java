@@ -74,9 +74,7 @@ public class UserController {
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE})
     public List<UserRest> getUsers(@RequestParam(value = "page", defaultValue = "1") int page,
                                    @RequestParam(value = "limit", defaultValue = "25") int limit) {
-
         List<UserRest> returnValue = new ArrayList<>();
-
         userService.getUsers(page, limit).stream().forEach(userDto -> {
             returnValue.add(modelMapper.map(userDto, UserRest.class));
         });
